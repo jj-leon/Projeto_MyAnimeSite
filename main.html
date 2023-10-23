@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Html</title>
+    <!--Linkando Estilos-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!--Google Fonte-->
+  </head>
+  <body>
+    <!--  https://www.youtube.com/watch?v=6HFpw5fcaD8&ab_channel=OnlineTutorials  -->
+    <header>
+          <a href="#" class="logo">SINOPSE</a>
+          <ul>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Favoritos</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Home</a></li>
+            
+          </ul>
+    </header>
+    <section class="banner"></section>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function(){
+        var header = document.querySelector("header")
+        header.classList.toggle("sticky", window.scrollY > 0);
+      })   
+      </script>
+
+ 
+  <section>
+    <!-- imagens -->
+    <div class="container">
+      <div class="flex">
+        <div class="card">
+          <a href="assets/html/gon.html">
+            <img src="assets/img/Gon.png" alt="gon" />
+          </a>
+        </div>
+        <legend>
+          Gon Freecss (ゴン=フリークス, Gon Furīkusu) é o protagonista de Hunter
+          x Hunter. Resoluto a fim de encontrar seu pai, Ging Freecss, o jovem
+          tornou-se um Hunter.
+        </legend>
+
+        <div class="card">
+          <a href="assets/html/naruto.html">
+            <img src="assets/img/naruto.jpg" alt="naruto" />
+          </a>
+        </div>
+        <legend>
+          Naruto Uzumaki (うずまきナルト, Uzumaki Naruto) é um shinobi de
+          Konohagakure do clã Uzumaki e protagonista homônimo da franquia
+          Naruto.
+        </legend>
+
+        <div class="card">
+          <a href="#">
+            <img src="assets/img/ichigo.jpg" alt="ichigo" />
+          </a>
+        </div>
+        <legend>
+          Ichigo é um humano que nasceu com a capacidade de ver fantasmas, isso
+          eventualmente o levou a se tornar um Shinigami substituto e participar
+          das mais importantes batalhas da Soul Society.
+        </legend>
+      </div>
+    </div>
+  </section>
+  
+  </body>
+</html>

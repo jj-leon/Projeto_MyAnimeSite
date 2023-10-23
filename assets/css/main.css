@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+  background-image: linear-gradient(180deg, rgba(6,6,157,1) 0%, rgba(14,23,51,1) 48%);
+  margin: 0;
+  overflow-x: hidden;
+}
+/***********NAV BAR**********************************************************************************/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 2;
+}
+
+header .logo {
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  transition: 0.6s;
+  z-index: 100000;
+}
+
+header.sticky
+{
+  padding: 5px 100px;
+  background: linear-gradient(180deg, rgba(6,6,157,1) 0%, rgba(14,23,51,1) 60%);
+  box-shadow: 1px 20px 30px #0e1733;
+}
+
+header.sticky .logo,header.sticky ul li a
+{
+  color:#723ea3;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+}
+
+.banner 
+{
+position: relative;
+width: 100%;
+background-size: cover;
+}
+/****************************************************************************************************/
+/* 
+*
+*
+*
+*/
+/***************************************** CARD ANIME ***********************************************/
+
+.background {
+  position: fixed;
+  top: 0;
+}
+.background > img {
+  width: 100vw;
+  height: 30vh;
+}
+
+.container {
+  padding: 14rem 41%;
+}
+
+.flex {
+  display: flex;
+  width: 500px;
+  flex-wrap: wrap;
+  gap: 4.5rem;
+  text-align: center;
+}
+
+.flex legend {
+  font-size: 1.7em;
+  margin-right: 120px;
+  margin-top: -40px;
+}
+
+.card {
+  padding: 1px 1px;
+  position: relative;
+  height: 35vh;
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.flex legend {
+  color: white;
+}
+
+.card img {
+  height: 35vh;
+  width: 20vw;
+  border-radius: 30px;
+  border: none;
+}
+
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  z-index: -1;
+  background: linear-gradient(
+    45deg,
+    #ffff00,
+    #00ff00,
+    #0099ff,
+    #001aff,
+    #a200ff,
+    #ff0055,
+    #ff0000,
+    #ffff00,
+    #00ff00,
+    #0099ff,
+    #001aff,
+    #a200ff
+  );
+  background-size: 300%;
+  border-radius: 30px;
+  animation: AnimarBorda 8s infinite alternate linear;
+}
+@keyframes AnimarBorda {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 300%;
+  }
+}
+
+.card::after {
+  filter: blur(50px);
+}
+/****************************************************************************************************/
